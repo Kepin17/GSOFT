@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST DESIGN</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <!-- header content -->
+      <div class="header-wrapper">
+        <div class="textbox">
+          <h1>Watch.</h1>
+          <h1>Learn.</h1>
+          <h1>Grow.</h1>
+        </div>
+        <div class="instructure-wrapper">
+          <div class="card">
+            <!-- instructure img -->
+            <img src="img/header/Person/Person1.jpg" alt="instructure" class="instructure-img" onmouseenter="layerAnimationIn()" onmouseleave="layerAnimationOut()" />
+            <div class="layer" id="layer">
+              <div class="layer-text">
+                <h3>
+                  Cosplayer<br />
+                  Course
+                </h3>
+                <h4><i class="fa-solid fa-laptop-code"></i>Topics<br />100</h4>
+              </div>
+            </div>
+            <div class="favorite">
+              <i class="fa-solid fa-trophy" style="font-size: 30px"></i>
+            </div>
+          </div>
+          <div class="card">
+            <!-- instructure img -->
+            <img src="img/header/Person/instructure.jpg" alt="instructure" class="instructure-img" onmouseenter="layerAnimationIn2()" onmouseleave="layerAnimationOut2()" />
+            <div class="layer" id="layer2">
+              <div class="layer-text">
+                <h3>
+                  Fitness<br />
+                  Course
+                </h3>
+                <h4><i class="fa-solid fa-laptop-code"></i>Topics<br />100</h4>
+              </div>
+            </div>
+            <div class="favorite">
+              <i class="fa-solid fa-trophy" style="font-size: 30px"></i>
+            </div>
+          </div>
+          <div class="card">
+            <!-- instructure img -->
+            <img src="img/header/Person/Person3.jpg" alt="instructure" class="instructure-img" onmouseenter="layerAnimationIn3()" onmouseleave="layerAnimationOut3()" />
+            <div class="layer" id="layer3">
+              <div class="layer-text">
+                <h3>
+                  Self-Defense<br />
+                  Course
+                </h3>
+                <h4><i class="fa-solid fa-laptop-code"></i>Topics<br />100</h4>
+              </div>
+            </div>
+            <div class="favorite">
+              <i class="fa-solid fa-trophy" style="font-size: 30px"></i>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">Join Our Course <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <nav>
+        <!-- logo -->
+        <h1>
+          <a href=""><img src="img/header/Logo/logo.jpg" alt="logo" width="45" height="45" class="logo" /> GSOFT</a>
+        </h1>
+
+        <!-- navbar -->
+        <div class="navbar">
+          <ul>
+            <li><a href="#">FIND POSITION</a></li>
+            <li><a href="#">CATEGORIES</a></li>
+            <li><a href="#">SKILL</a></li>
+            <li><a href="#">CUSTOMER</a></li>
+            <li><i class="fa-solid fa-user" onclick="profileUser()"></i></li>
+            <div class="profile_Menu" id="profile">
+              <a href="#">Resigter</a>
+              <a href="#">Login</a>
+              <a href="#">Profile</a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <script src="App.js"></script>
+  </body>
+</html>
