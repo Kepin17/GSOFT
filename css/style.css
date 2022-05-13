@@ -460,16 +460,23 @@ nav a {
   color: #000000;
 }
 
-#tech {
+#newSlide {
   position: absolute;
   top: 0;
-  left: 100%;
-  margin: auto;
+  left: 5.3%;
+}
+
+.wrapper-tech {
+  position: relative;
+  top: 0;
+  left: 0;
   transition: 3s;
+  display: none;
 }
 
 #AllCourse {
   left: 0;
   transition: 3s;
   position: relative;
+  z-index: 1;
 }
