@@ -369,23 +369,25 @@ nav a {
   height: 40px;
   margin: 0 20px;
   margin-top: 20px;
-  background: #000;
-  color: #fff;
+  color: rgb(120, 110, 110);
   cursor: pointer;
   font-size: 20px;
+  font-family: "Secular One", sans-serif;
+  background-color: #fff;
+  border: none;
 }
 
 .course-nav button:hover {
-  background: rgb(41, 40, 40);
+  color: #000000;
 }
 
 .course-list-wrapper {
   margin: 50px auto;
   width: 80%;
   height: 500px;
-  border: 3px solid #000;
   text-align: center;
   overflow: hidden;
+  position: relative;
 }
 
 .course-list-wrapper .course-card {
@@ -393,23 +395,81 @@ nav a {
   width: 300px;
   height: 400px;
   margin: 40px 30px;
-  background-color: #000000;
+  background-color: #fefafa;
   border-radius: 20px;
+  position: relative;
+  box-shadow: 10px 10px 15px rgb(213, 205, 205);
 }
 
 .course-card img {
   width: 300px;
-  height: 400px;
-  border-radius: 20px;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
 }
 
-.more-btn {
+.course-textbox {
+  position: absolute;
+  top: 50%;
+}
+
+.course-textbox h1,
+.course-textbox h4,
+.course-textbox p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 10px 30px;
+  text-align: left;
+}
+
+.course-textbox p {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.course-btn {
+  border: 4px solid #000;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 8px 40px;
+  transition: 0.5s;
+  font-family: sans-serif;
+  background-color: #000;
+}
+
+.course-btn:hover {
+  background-color: rgb(53, 50, 50);
+  color: #fefafa;
+  padding: 10px;
+}
+
+.more-btn,
+.less-btn {
   text-align: center;
   width: 100px;
   height: 40px;
   background-color: #000;
   color: #ffffff;
   font-size: 15px;
-  margin-bottom: 40px;
   cursor: pointer;
+}
+
+.less-btn {
+  display: none;
+}
+
+#course-active {
+  color: #000000;
+}
+
+#tech {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin: auto;
+  transition: 3s;
+}
+
+#AllCourse {
+  left: 0;
+  transition: 3s;
+  position: relative;
 }

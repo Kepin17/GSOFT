@@ -40,3 +40,48 @@ function profileUser() {
     profile.style.display = "block";
   }
 }
+
+// more Function
+
+function moreBtn() {
+  const showMore = document.getElementById("CourserList");
+  const moreBtn = document.getElementById("more");
+  const lessBtn = document.getElementById("less");
+
+  showMore.style.height = "2000px";
+  // destroy first btn
+  moreBtn.style.display = "none";
+  // show btn
+  lessBtn.style.display = "block";
+}
+
+// less btn function
+
+function lessBtn() {
+  const showLess = document.getElementById("CourserList");
+  const lessBtn = document.getElementById("less");
+  const moreBtn = document.getElementById("more");
+
+  showLess.style.height = "500px";
+  // destroy first btn
+  lessBtn.style.display = "none";
+  // show btn
+  moreBtn.style.display = "block";
+}
+
+
+// active && deactive function
+
+function activeTech() {
+  
+}
+
+// function techSection() {
+//   const All = document.getElementById("AllCourse");
+//   const Tect = document.getElementById("tech");
+
+
+
+//   All.style.left = "-100%";
+//   Tect.style.left = "5.3%";
+// }
