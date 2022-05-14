@@ -49,3 +49,57 @@ function profileUser() {
 }
 
 // more Function
+
+let statusUser1 = document.getElementById("activeUser1");
+let statusUser2 = document.getElementById("activeUser2");
+let statusUser3 = document.getElementById("activeUser3");
+let defaultUser = document.getElementById("testimonias");
+
+let user1 = document.getElementById("user1");
+let user2 = document.getElementById("user2");
+let user3 = document.getElementById("user3");
+let defaultTextbox = document.getElementById("defaultTextBox");
+
+//User Testimoni function
+
+statusUser1.onclick = function () {
+  statusUser1.style.transform = "scale(1.1)";
+  statusUser2.style.transform = "scale(1)";
+  statusUser3.style.transform = "scale(1)";
+  user1.style.display = "block";
+  user2.style.display = "none";
+  user3.style.display = "none";
+  defaultTextbox.style.display = "none";
+};
+
+statusUser2.onclick = function () {
+  statusUser2.style.transform = "scale(1.1)";
+  statusUser1.style.transform = "scale(1)";
+  statusUser3.style.transform = "scale(1)";
+  user1.style.display = "none";
+  user2.style.display = "block";
+  user3.style.display = "none";
+  defaultTextbox.style.display = "none";
+};
+
+statusUser3.onclick = function () {
+  statusUser3.style.transform = "scale(1.1)";
+  statusUser2.style.transform = "scale(1)";
+  statusUser1.style.transform = "scale(1)";
+  user1.style.display = "none";
+  user2.style.display = "none";
+  user3.style.display = "block";
+  defaultTextbox.style.display = "none";
+};
+
+// default function
+
+defaultUser.onmouseleave = function () {
+  statusUser3.style.transform = "scale(1)";
+  statusUser2.style.transform = "scale(1)";
+  statusUser1.style.transform = "scale(1)";
+  defaultTextbox.style.display = "block";
+  user1.style.display = "none";
+  user2.style.display = "none";
+  user3.style.display = "none";
+};
