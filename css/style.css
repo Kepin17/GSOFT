@@ -392,7 +392,7 @@ nav a {
 
 .course-list-wrapper .course-card {
   display: inline-block;
-  width: 300px;
+  width: 320px;
   height: 400px;
   margin: 40px 30px;
   background-color: #fefafa;
@@ -402,7 +402,7 @@ nav a {
 }
 
 .course-card img {
-  width: 300px;
+  width: 320px;
   height: 200px;
   border-radius: 20px 20px 0 0;
 }

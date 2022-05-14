@@ -5,6 +5,7 @@ let Tech = document.getElementById("changeSlide");
 let sports = document.getElementById("sportSlide");
 let Cooking = document.getElementById("cookingSlide");
 let Acting = document.getElementById("actingSlide");
+let courseList = document.getElementById("CourserList");
 
 // button
 let Alldeactive = document.getElementById("course-active");
@@ -17,31 +18,29 @@ let Cookingdeactive = document.getElementById("cooking-active");
 let Cookingctive = document.getElementById("cooking-active");
 let Actingdeactive = document.getElementById("acting-active");
 let Actingactive = document.getElementById("acting-active");
+let showLess = document.getElementById("CourserList");
+let showMore = document.getElementById("CourserList");
+let lessBtns = document.getElementById("less");
+let moreBtns = document.getElementById("more");
+
+// Button function
 
 function moreBtn() {
-  const showMore = document.getElementById("CourserList");
-  const moreBtn = document.getElementById("more");
-  const lessBtn = document.getElementById("less");
-
   showMore.style.height = "2000px";
   // destroy first btn
-  moreBtn.style.display = "none";
+  moreBtns.style.display = "none";
   // show btn
-  lessBtn.style.display = "block";
+  lessBtns.style.display = "block";
 }
 
 // less btn function
 
 function lessBtn() {
-  const showLess = document.getElementById("CourserList");
-  const lessBtn = document.getElementById("less");
-  const moreBtn = document.getElementById("more");
-
   showLess.style.height = "500px";
   // destroy first btn
-  lessBtn.style.display = "none";
+  lessBtns.style.display = "none";
   // show btn
-  moreBtn.style.display = "block";
+  moreBtns.style.display = "block";
 }
 
 // Destroy btn Function
@@ -54,6 +53,11 @@ function destroyBtn() {
 function spawnBtn() {
   const spawnBtn = document.getElementById("more");
   spawnBtn.style.display = "block";
+}
+
+function destroyBtnAndFixHeight() {
+  courseList.style.height = "500px";
+  lessBtns.style.display = "none";
 }
 
 // active && deactive function
@@ -114,6 +118,7 @@ Techactive.onclick = function () {
   deactiveActing();
   deactiveCooking();
   deactiveSport();
+  destroyBtnAndFixHeight();
   All.style.display = "none";
   Tech.style.display = "block";
   sports.style.display = "none";
@@ -128,6 +133,7 @@ Sportactive.onclick = function () {
   deactiveActing();
   deactiveCooking();
   activeSport();
+  destroyBtnAndFixHeight();
   All.style.display = "none";
   Tech.style.display = "none";
   sports.style.display = "block";
@@ -142,6 +148,7 @@ Cookingctive.onclick = function () {
   deactiveActing();
   activeCooking();
   deactiveSport();
+  destroyBtnAndFixHeight();
   All.style.display = "none";
   Tech.style.display = "none";
   sports.style.display = "none";
@@ -156,6 +163,7 @@ Actingdeactive.onclick = function () {
   activeActing();
   deactiveCooking();
   deactiveSport();
+  destroyBtnAndFixHeight();
   All.style.display = "none";
   Tech.style.display = "none";
   sports.style.display = "none";
