@@ -6,9 +6,7 @@ const hoverBtn = document.getElementById("headerBtn");
 function layerAnimationIn() {
   layer.style.top = "60%";
   layer.style.opacity = ".7";
-  // setTimeout(() => {
-  //   hoverBtn.style.display = "none";
-  // }, 500);
+
 }
 function layerAnimationIn2() {
   layer2.style.top = "60%";
@@ -22,9 +20,7 @@ function layerAnimationIn3() {
 function layerAnimationOut() {
   layer.style.top = "100%";
   layer.style.opacity = "1";
-  // setTimeout(() => {
-  //   hoverBtn.style.display = "block";
-  // }, 50);
+
 }
 
 function layerAnimationOut2() {

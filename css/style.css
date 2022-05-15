@@ -491,7 +491,7 @@ nav a {
 
 .customer-card-wrapper {
   width: 80%;
-  height: 600px;
+  height: 700px;
   background: linear-gradient(135deg, #ffffff, rgb(255, 255, 255));
   border: 4px solid #000;
   overflow: hidden;
@@ -608,9 +608,59 @@ nav a {
 
 footer {
   width: 100%;
-  height: 50px;
-  background: rgb(1, 1, 1);
-  color: #fefafa;
-  line-height: 50px;
+  height: 300px;
+  background: #f4f5f6;
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.footer-wrapper {
   text-align: center;
+}
+
+.footer-textbox {
+  width: 400px;
+  height: auto;
+  display: inline-block;
+  margin: auto 30px;
+}
+.footer-textbox img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.footer-textbox h1 {
+  font-family: "Secular One", sans-serif;
+  font-size: 30px;
+  text-align: left;
+}
+
+.footer-textbox h3 {
+  text-align: left;
+}
+
+.contact-box {
+  text-align: left;
+}
+
+.contact-box h1 {
+  font-size: 30px;
+  font-family: "Secular One", sans-serif;
+}
+
+input[type="email"] {
+  margin: 10px 0;
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+}
+
+input[type="email"]:focus {
+  border: none;
+  outline: none;
+}
+
+.contact-icon i {
+  margin: 10px;
 }
