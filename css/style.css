@@ -608,22 +608,24 @@ nav a {
 
 footer {
   width: 100%;
-  height: 300px;
+  height: 200px;
   background: #f4f5f6;
   overflow: hidden;
   margin-top: 5%;
 }
 
 .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
 }
 
 .footer-textbox {
   width: 400px;
-  height: auto;
-  display: inline-block;
-  margin: auto 30px;
+  height: 200px;
+  margin: -20px 30px;
 }
+
 .footer-textbox img {
   display: inline-block;
   vertical-align: middle;
@@ -636,7 +638,12 @@ footer {
   text-align: left;
 }
 
-.footer-textbox h3 {
+.footer-textbox p {
+  text-align: left;
+  margin: 10px auto;
+}
+
+.footer-textbox h4 {
   text-align: left;
 }
 
@@ -661,6 +668,12 @@ input[type="email"]:focus {
   outline: none;
 }
 
-.contact-icon i {
+.contact-icon {
+  margin: 15px auto;
+}
+
+.contact-icon a {
+  color: #000;
   margin: 10px;
+  font-size: 23px;
 }
