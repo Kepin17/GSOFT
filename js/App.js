@@ -6,7 +6,6 @@ const hoverBtn = document.getElementById("headerBtn");
 function layerAnimationIn() {
   layer.style.top = "60%";
   layer.style.opacity = ".7";
-
 }
 function layerAnimationIn2() {
   layer2.style.top = "60%";
@@ -20,7 +19,6 @@ function layerAnimationIn3() {
 function layerAnimationOut() {
   layer.style.top = "100%";
   layer.style.opacity = "1";
-
 }
 
 function layerAnimationOut2() {
@@ -41,6 +39,17 @@ function profileUser() {
     profile.style.display = "none";
   } else {
     profile.style.display = "block";
+  }
+}
+
+// Menu List on mobile
+
+function menuListBar() {
+  const menu = document.getElementById("nav");
+  if (menu.style.left == "-200px") {
+    menu.style.left = "0";
+  } else {
+    menu.style.left = "-200px";
   }
 }
 
